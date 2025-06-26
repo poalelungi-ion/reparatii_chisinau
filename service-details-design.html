@@ -237,7 +237,7 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="portfolio-item">
-                      <img src="assets/img/portfolio/14e4605a9122bfef3e2247b0397a1a66.jpg" alt="" class="img-fluid" loading="lazy">
+                      <img src="assets/img/portfolio/394d3e55.jpg" alt="" class="img-fluid" loading="lazy">
                       <div class="portfolio-info">
                         <h5 data-translate="portfolio_item1_title">Living Modern</h5>
                         <p data-translate="portfolio_item1_desc">Design minimalist</p>
@@ -255,7 +255,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="portfolio-item">
-                      <img src="assets/img/services/interior-4.webp" alt="" class="img-fluid" loading="lazy">
+                      <img src="assets/img/portfolio/1ab1c328467247.55c189fd29f37.jpg" alt="" class="img-fluid" loading="lazy">
                       <div class="portfolio-info">
                         <h5 data-translate="portfolio_item3_title">Dormitor Cozy</h5>
                         <p data-translate="portfolio_item3_desc">Ambianță caldă pentru relaxare maximă</p>
@@ -424,7 +424,7 @@
   <div class="container copyright text-center mt-4">
     <p>© <span data-translate="footer_copyright">Copyright</span> <strong class="px-1 sitename" data-translate="title">Renovare</strong> <span data-translate="footer_rights">Toate Drepturile Rezervate</span></p>
     <div class="credits">
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      Designed by <a href="#">Poalelungi Consulting</a>
     </div>
   </div>
 
@@ -450,6 +450,7 @@
 
 <!-- Language Switcher Script -->
 <script>
+  // Translation object containing all text for Romanian, Russian, and English
   const translations = {
     ro: {
       title: "Renovare",
@@ -573,7 +574,7 @@
       benefit3_title: "Функциональность",
       benefit3_desc: "Оптимизируем пространства для комфорта и ежедневной эффективности.",
       benefit4_title: "Гарантированное качество",
-      benefit4_desc: "Премиум-материалы и высококачественное исполнение.",
+      benefit4_desc: "Мы используем только премиум-материалы и обеспечиваем высокое качество исполнения.",
       portfolio_title: "Наше портфолио дизайна",
       portfolio_item1_title: "Современная гостиная",
       portfolio_item1_desc: "Минималистичный дизайн для просторной гостиной",
@@ -699,17 +700,28 @@
     }
   };
 
+  // Function to change the language and update all elements with data-translate attributes
   function changeLanguage(lang) {
+    // Update all elements with data-translate attribute
     document.querySelectorAll('[data-translate]').forEach(element => {
       const key = element.getAttribute('data-translate');
-      element.textContent = translations[lang][key] || element.textContent;
+      if (translations[lang][key]) {
+        element.textContent = translations[lang][key];
+      }
     });
+
+    // Update the document's lang attribute for accessibility
     document.documentElement.lang = lang;
+
+    // Optionally, save the selected language to localStorage to persist across page reloads
+    localStorage.setItem('selectedLanguage', lang);
   }
 
-  // Set default language to Romanian
+  // Set default language to Romanian on page load
   document.addEventListener('DOMContentLoaded', () => {
-    changeLanguage('ro');
+    // Check if a language is saved in localStorage, otherwise default to 'ro'
+    const savedLang = localStorage.getItem('selectedLanguage') || 'ro';
+    changeLanguage(savedLang);
   });
 </script>
 

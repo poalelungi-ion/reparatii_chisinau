@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Strategy Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title data-translate="meta_title">Renovare apartamente și băi la cheie</title>
+  <meta name="description" data-translate="meta_description" content="Renovare profesională a apartamentelor și băilor la cheie în Chișinău. Materiale de calitate, tehnologii moderne și abordare individuală.">
+  <meta name="keywords" data-translate="meta_keywords" content="renovare apartamente, renovare băi, la cheie, design interior">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -26,175 +26,318 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Strategy
-  * Template URL: https://bootstrapmade.com/strategy-bootstrap-agency-template/
-  * Updated: Jun 06 2025 with Bootstrap v5.3.6
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body class="starter-page-page">
+<body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Strategy</h1>
-      </a>
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <h1 class="sitename" data-translate="title">Renovare</h1>
+    </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active" data-translate="nav_home">Acasă</a></li>
+        <li><a href="#about" data-translate="nav_about">Despre Noi</a></li>
+        <li><a href="#services" data-translate="nav_services">Servicii</a></li>
+        <li><a href="#portfolio" data-translate="nav_portfolio">Portofoliu</a></li>
+        <li><a href="#contact" data-translate="nav_contact">Contacte</a></li>
+        <li class="dropdown"><a href="#"><span>Limba</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li ><a onclick="changeLanguage('ro')" data-translate="lang_ro">Română</a></li>
+            <li><a  onclick="changeLanguage('ru')" data-translate="lang_ru">Русский</a></li>
+            <li><a onclick="changeLanguage('en')" data-translate="lang_en">English</a></li>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+          </ul>
+        </li>
 
-    </div>
-  </header>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
 
-  <main class="main">
+    <a class="btn-getstarted" href="tel:+37369091161" data-translate="nav_getstarted">Contactați-ne </a>
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade">
-      <div class="container position-relative">
-        <h1>Starter Page</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+  </div>
+</header>
 
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+<main class="main">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <div><span>Check Our</span> <span class="description-title">Starter Section</span></div>
-      </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
-      </div>
 
-    </section><!-- /Starter Section Section -->
 
-  </main>
 
-  <footer id="footer" class="footer">
+  <!-- Contact Section -->
+  <section id="contact" class="contact section" style="margin-top: 100px;">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Strategy</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2 >Angajam</h2>
+      <div><span >Cautam </span> <span class="description-title" >specialisti pentru lucrari de reparatie </span></div>
+      <div><span >Lucru </span> <span class="description-title" >pe termen lung </span></div>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Contact Info Boxes -->
+      <div class="row gy-4 mb-5">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-info-box">
+            <div class="icon-box">
+              <i class="bi bi-phone-flip"></i>
+            </div>
+            <div class="info-content">
+              <h4 data-translate="contact_address">Telefon de contact</h4>
+              <p><a href="tel:+37369091161">+373 690 91 161</a></p>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-info-box">
+            <div class="icon-box">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h4 data-translate="contact_email">Email</h4>
+              <p><a href="mailto:info@renovare.md">info@renovare.md</a></p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="contact-info-box">
+            <div class="icon-box">
+              <i class="bi bi-headset"></i>
+            </div>
+            <div class="info-content">
+              <h4 data-translate="contact_hours">Program de lucru</h4>
+              <p data-translate="contact_hours_text">Luni-Vineri: 9:00 - 18:00</p> <p data-translate="contact_hours_text2"> Sâmbătă: 10:00 - 16:00</p>
+            </div>
+          </div>
         </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
-        </div>
-
       </div>
+
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Strategy</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+    <!-- Google Maps (Full Width) -->
+    <div class="map-section" data-aos="fade-up" data-aos-delay="200">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87073.65641812712!2d28.77577586218291!3d46.99995657321828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c3628b769a1%3A0x37d1d6305749dd3c!2zQ2hpyJlpbsSDdSwgTW9sZG92YQ!5e0!3m2!1sen!2s!4v1750913121152!5m2!1sen!2s" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-  </footer>
+    <!-- Contact Form Section (Overlapping) -->
+    <div class="container form-container-overlap">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-lg-10">
+          <div class="contact-form-wrapper">
+            <h2 class="text-center mb-4" data-translate="contact_form_title">Contactați-ne</h2>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-with-icon">
+                      <i class="bi bi-person"></i>
+                      <input type="text" class="form-control" name="name" placeholder="Nume" required="">
+                    </div>
+                  </div>
+                </div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-with-icon">
+                      <i class="bi bi-envelope"></i>
+                      <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                    </div>
+                  </div>
+                </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="input-with-icon">
+                      <i class="bi bi-text-left"></i>
+                      <div class="custom-file-upload">
+                        <input type="file" id="cvUpload" class="form-control" accept=".pdf,.doc,.docx" required>
+                        <label for="cvUpload" class="file-label">Choose a CV (PDF, DOC, DOCX)</label>
+                        <span id="fileName" class="file-name"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+                <!-- Inline JavaScript to update file name display -->
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const fileInput = document.getElementById('cvUpload');
+                    const fileNameDisplay = document.getElementById('fileName');
+
+                    fileInput.addEventListener('change', () => {
+                      if (fileInput.files.length > 0) {
+                        fileNameDisplay.textContent = fileInput.files[0].name;
+                        fileNameDisplay.style.display = 'inline';
+                      } else {
+                        fileNameDisplay.textContent = '';
+                        fileNameDisplay.style.display = 'none';
+                      }
+                    });
+                  });
+                </script>
+                <!-- Inline CSS for styling -->
+                <style>
+                  .custom-file-upload {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                  }
+                  .custom-file-upload input[type="file"] {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    cursor: pointer;
+                    z-index: 2;
+                  }
+                  .custom-file-upload .file-label {
+                    display: inline-block;
+                    padding: 0.375rem 0.75rem;
+                    background-color: #f8f9fa;
+                    border: 1px solid #ced4da;
+                    border-radius: 0.25rem;
+                    width: 100%;
+                    color: #6c757d;
+                    text-align: left;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    z-index: 1;
+                  }
+                  .custom-file-upload .file-name {
+                    margin-left: 10px;
+                    color: #6c757d;
+                    font-size: 0.9rem;
+                    display: none; /* Hidden until a file is selected */
+                  }
+                  .input-with-icon {
+                    position: relative;
+                  }
+                  .input-with-icon .bi {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    z-index: 3;
+                    color: #6c757d;
+                  }
+                  .custom-file-upload .file-label {
+                    padding-left: 2.5rem; /* Space for the icon */
+                  }
+                  .custom-file-upload input[type="file"]:focus + .file-label {
+                    border-color: #86b7fe;
+                    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+                  }
+                </style>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <div class="input-with-icon">
+                      <i class="bi bi-chat-dots message-icon"></i>
+                      <textarea class="form-control" name="message" placeholder="Mesaj..." style="height: 180px" required=""></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="loading" data-translate="form_loading">Încărcare</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message" data-translate="form_sent">Mesajul tău a fost trimis. Mulțumim!</div>
+                </div>
+
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary btn-submit" data-translate="form_submit">TRIMITE MESAJ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /Contact Section -->
+
+</main>
+
+<footer id="footer" class="footer">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename" data-translate="footer_title">Renovare</span>
+        </a>
+        <p data-translate="footer_text">Creăm spații confortabile și moderne pentru casa ta folosind tehnologii și materiale avansate.</p>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="footer_services">Serviciile noastre</h4>
+        <ul>
+          <li><a href="#services" data-translate="footer_service_design">Design interior</a></li>
+          <li><a href="#services" data-translate="footer_service_apartments">Renovare apartamente</a></li>
+          <li><a href="#services" data-translate="footer_service_bathrooms">Renovare băi</a></li>
+          <li><a href="#services" data-translate="footer_service_finishing">Lucrări de finisare</a></li>
+          <li><a href="#services" data-translate="footer_service_plumbing">Lucrări de instalații sanitare</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4 data-translate="footer_contact">Contacte</h4>
+        <p></p>
+        <p>Chișinău, Moldova, MD</p>
+        <p class="mt-4"><strong data-translate="footer_phone_label">Telefon:</strong> <a href="tel:+37369091161">+373 690 91 161</a></p>
+        <p><strong data-translate="footer_email_label">Email:</strong> <span>info@renovare.md</span></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span data-translate="footer_copyright">Copyright</span> <strong class="px-1 sitename" data-translate="footer_title">Renovare</strong> <span data-translate="footer_rights">Toate drepturile rezervate</span></p>
+    <div class="credits">
+      Design de <a href="#">Poalelungi Consulting</a>
+    </div>
+  </div>
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Translation JS File -->
+<script src="assets/js/translations.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 
