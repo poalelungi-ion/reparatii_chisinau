@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title data-translate="page_title">Service Details - Renovare</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="service-details-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <h1 class="sitename" data-translate="title">Renovare</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active" data-translate="nav_home">Acasă</a></li>
+        <li><a href="#about" data-translate="nav_about">Despre Noi</a></li>
+        <li><a href="#services" data-translate="nav_services">Servicii</a></li>
+        <li><a href="#portfolio" data-translate="nav_portfolio">Portofoliu</a></li>
+        <li><a href="#contact" data-translate="nav_contact">Contacte</a></li>
+        <li class="dropdown"><a href="#"><span data-translate="lang_label">Limba</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a onclick="changeLanguage('ro')" data-translate="lang_ro">Română</a></li>
+            <li><a onclick="changeLanguage('ru')" data-translate="lang_ru">Русский</a></li>
+            <li><a onclick="changeLanguage('en')" data-translate="lang_en">English</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <a class="btn-getstarted" href="tel:+37369091161" data-translate="nav_getstarted">Contactați-ne</a>
+
+  </div>
+</header>
+
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title dark-background" data-aos="fade">
+    <div class="container position-relative">
+      <h1 data-translate="service_title">Design Interior</h1>
+      <p data-translate="service_description">Creăm designuri unice și funcționale pentru casa ta, luând în considerare toate dorințele și tendințele moderne.</p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="index.html" data-translate="nav_home">Acasă</a></li>
+          <li class="current" data-translate="page_title">Detalii Servicii</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Service Details Section -->
+  <section id="service-details" class="service-details section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-5">
+
+        <div class="col-lg-8 order-lg-1 order-2">
+          <div class="service-main-content">
+            <div class="service-header" data-aos="fade-up">
+              <h1 data-translate="service_title">Design Interior</h1>
+              <div class="service-meta">
+                <span><i class="bi bi-award"></i> <span data-translate="meta_premium">Serviciu Premium</span></span>
+                <span><i class="bi bi-clock"></i> <span data-translate="meta_since">Din 2015</span></span>
+                <span><i class="bi bi-star-fill"></i> <span data-translate="meta_rating">Evaluare 4.9/5</span></span>
+              </div>
+              <p class="lead" data-translate="service_lead">
+                Creăm spații care combină estetica, funcționalitatea și confortul, adaptate nevoilor și stilului tău de viață.
+              </p>
+            </div>
+
+            <div class="service-tabs" data-aos="fade-up" data-aos-delay="200">
+              <ul class="nav nav-tabs" id="serviceTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#service-details-tab-1" type="button" role="tab" aria-controls="overview" aria-selected="true">
+                    <i class="bi bi-info-circle"></i> <span data-translate="tab_overview">Prezentare Generală</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#service-details-tab-2" type="button" role="tab" aria-controls="process" aria-selected="false">
+                    <i class="bi bi-diagram-3"></i> <span data-translate="tab_process">Proces</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#service-details-tab-3" type="button" role="tab" aria-controls="benefits" aria-selected="false">
+                    <i class="bi bi-graph-up-arrow"></i> <span data-translate="tab_benefits">Beneficii</span>
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="service-details-tab-1" role="tabpanel" aria-labelledby="overview-tab">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="content-block">
+                        <h3 data-translate="overview_title">Abordare Personalizată în Design</h3>
+                        <p data-translate="overview_p1">Oferim soluții de design interior care reflectă personalitatea și nevoile tale, integrând cele mai recente tendințe în design.</p>
+                        <p data-translate="overview_p2">Fiecare proiect este unic, iar noi colaborăm îndeaproape cu clienții pentru a crea spații care inspiră și oferă confort pe termen lung.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <img src="assets/img/services/chairs-contemporary-curtains-1571453.jpg" alt="Interior Design" class="img-fluid rounded">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="service-details-tab-2" role="tabpanel" aria-labelledby="process-tab">
+                  <div class="process-timeline">
+                    <div class="timeline-item">
+                      <div class="timeline-marker">01</div>
+                      <div class="timeline-content">
+                        <h4 data-translate="process_step1_title">Consultare Inițială</h4>
+                        <p data-translate="process_step1_desc">Discutăm dorințele și nevoile tale pentru a înțelege viziunea ta asupra spațiului.</p>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-marker">02</div>
+                      <div class="timeline-content">
+                        <h4 data-translate="process_step2_title">Concept și Proiectare</h4>
+                        <p data-translate="process_step2_desc">Creăm un concept de design personalizat, incluzând schițe și randări 3D.</p>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-marker">03</div>
+                      <div class="timeline-content">
+                        <h4 data-translate="process_step3_title">Implementare</h4>
+                        <p data-translate="process_step3_desc">Coordonăm toate aspectele proiectului, de la selecția materialelor la gestionarea lucrărilor.</p>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-marker">04</div>
+                      <div class="timeline-content">
+                        <h4 data-translate="process_step4_title">Finalizare și Livrare</h4>
+                        <p data-translate="process_step4_desc">Asigurăm finisajele finale și predăm un spațiu gata de utilizare, perfect aliniat cu viziunea ta.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="service-details-tab-3" role="tabpanel" aria-labelledby="benefits-tab">
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <div class="benefit-card">
+                        <div class="benefit-icon">
+                          <i class="bi bi-house"></i>
+                        </div>
+                        <h4 data-translate="benefit1_title">Spații Personalizate</h4>
+                        <p data-translate="benefit1_desc">Designuri unice care reflectă stilul și personalitatea ta.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="benefit-card">
+                        <div class="benefit-icon">
+                          <i class="bi bi-brush"></i>
+                        </div>
+                        <h4 data-translate="benefit2_title">Estetică Modernă</h4>
+                        <p data-translate="benefit2_desc">Integrăm cele mai noi tendințe pentru un aspect contemporan.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="benefit-card">
+                        <div class="benefit-icon">
+                          <i class="bi bi-gear"></i>
+                        </div>
+                        <h4 data-translate="benefit3_title">Funcționalitate</h4>
+                        <p data-translate="benefit3_desc">Optimizăm spațiile pentru confort și eficiență zilnică.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="benefit-card">
+                        <div class="benefit-icon">
+                          <i class="bi bi-check-circle"></i>
+                        </div>
+                        <h4 data-translate="benefit4_title">Calitate Garantată</h4>
+                        <p data-translate="benefit4_desc">Materiale premium și execuție de înaltă calitate.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-gallery" data-aos="fade-up" data-aos-delay="300">
+              <h3 data-translate="portfolio_title">Portofoliul Nostru de Design</h3>
+              <div class="service-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 800,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": 1,
+                    "spaceBetween": 30,
+                    "breakpoints": {
+                      "768": {
+                        "slidesPerView": 2
+                      }
+                    },
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/portfolio/14e4605a9122bfef3e2247b0397a1a66.jpg" alt="" class="img-fluid" loading="lazy">
+                      <div class="portfolio-info">
+                        <h5 data-translate="portfolio_item1_title">Living Modern</h5>
+                        <p data-translate="portfolio_item1_desc">Design minimalist</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/portfolio/R.jpg" alt="" class="img-fluid" loading="lazy">
+                      <div class="portfolio-info">
+                        <h5 data-translate="portfolio_item2_title">Bucătărie Contemporană</h5>
+                        <p data-translate="portfolio_item2_desc">Funcționalitate și eleganță într-un spațiu compact</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/services/interior-4.webp" alt="" class="img-fluid" loading="lazy">
+                      <div class="portfolio-info">
+                        <h5 data-translate="portfolio_item3_title">Dormitor Cozy</h5>
+                        <p data-translate="portfolio_item3_desc">Ambianță caldă pentru relaxare maximă</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 order-lg-2 order-1">
+          <div class="service-sidebar" data-aos="fade-left">
+            <div class="action-card" data-aos="zoom-in" data-aos-delay="100">
+              <h3 data-translate="action_title">Gata să-ți Transformăm Casa?</h3>
+              <p data-translate="action_desc">Obține o consultație gratuită cu experții noștri în design interior și descoperă cum îți putem transforma spațiul.</p>
+              <a href="#" class="btn-primary" data-translate="action_btn">Programează o Consultație</a>
+              <span class="guarantee"><i class="bi bi-shield-check"></i> <span data-translate="action_guarantee">Garanție 100% Satisfacție</span></span>
+            </div>
+
+            <div class="service-features-list" data-aos="fade-up" data-aos-delay="200">
+              <h4 data-translate="features_title">Ce Oferim</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-house"></i>
+                  <div>
+                    <h5 data-translate="feature1_title">Design Personalizat</h5>
+                    <p data-translate="feature1_desc">Soluții adaptate stilului tău de viață</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-brush"></i>
+                  <div>
+                    <h5 data-translate="feature2_title">Tendințe Moderne</h5>
+                    <p data-translate="feature2_desc">Integrăm cele mai noi stiluri de design</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-gear"></i>
+                  <div>
+                    <h5 data-translate="feature3_title">Optimizare Spațiu</h5>
+                    <p data-translate="feature3_desc">Maximizăm funcționalitatea fiecărui spațiu</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <div>
+                    <h5 data-translate="feature4_title">Materiale de Calitate</h5>
+                    <p data-translate="feature4_desc">Utilizăm doar materiale premium</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-person-check"></i>
+                  <div>
+                    <h5 data-translate="feature5_title">Suport Complet</h5>
+                    <p data-translate="feature5_desc">Asistență pe tot parcursul proiectului</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial-header">
+                <i class="bi bi-quote"></i>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <p class="testimonial-text" data-translate="testimonial_text">
+                "Echipa Renovare a transformat complet casa noastră. Designul este uimitor, iar atenția la detalii este incredibilă!"
+              </p>
+              <div class="client-info">
+                <img src="assets/img/person/person-m-5.webp" alt="Client" class="client-image">
+                <div class="client-details">
+                  <h5 data-translate="testimonial_name">Maria Popescu</h5>
+                  <span data-translate="testimonial_role">Proprietar, București</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="400">
+              <h4 data-translate="contact_title">Aveți Întrebări?</h4>
+              <div class="contact-method">
+                <i class="bi bi-telephone-fill"></i>
+                <div>
+                  <span data-translate="contact_phone_label">Sunați-ne</span>
+                  <p>+373 69 091 161</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="bi bi-envelope-fill"></i>
+                <div>
+                  <span data-translate="contact_email_label">Scrieți-ne</span>
+                  <p>contact@renovare.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Service Details Section -->
+
+</main>
+
+<footer id="footer" class="footer">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename" data-translate="title">Renovare</span>
+        </a>
+        <p data-translate="footer_about">Oferim soluții de design interior care combină estetica și funcționalitatea pentru a crea spații care inspiră și oferă confort.</p>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="footer_links_title">Link-uri Utile</h4>
+        <ul>
+          <li><a href="#" data-translate="nav_home">Acasă</a></li>
+          <li><a href="#" data-translate="nav_about">Despre Noi</a></li>
+          <li><a href="#" data-translate="nav_services">Servicii</a></li>
+          <li><a href="#" data-translate="footer_terms">Termeni și Condiții</a></li>
+          <li><a href="#" data-translate="footer_privacy">Politica de Confidențialitate</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4 data-translate="footer_services_title">Serviciile Noastre</h4>
+        <ul>
+          <li><a href="#" data-translate="service1">Design Interior</a></li>
+          <li><a href="#" data-translate="service2">Consultanță Design</a></li>
+          <li><a href="#" data-translate="service3">Management Proiect</a></li>
+          <li><a href="#" data-translate="service4">Renovări</a></li>
+          <li><a href="#" data-translate="service5">Mobilier Personalizat</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4 data-translate="contact_title">Contactați-ne</h4>
+        <p>Strada Mihai Eminescu 123</p>
+        <p>Chișinău, MD-2009</p>
+        <p>Moldova</p>
+        <p class="mt-4"><strong data-translate="contact_phone_label">Telefon:</strong> <span>+373 69 091 161</span></p>
+        <p><strong data-translate="contact_email_label">Email:</strong> <span>contact@renovare.com</span></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span data-translate="footer_copyright">Copyright</span> <strong class="px-1 sitename" data-translate="title">Renovare</strong> <span data-translate="footer_rights">Toate Drepturile Rezervate</span></p>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<!-- Language Switcher Script -->
+<script>
+  const translations = {
+    ro: {
+      title: "Renovare",
+      nav_home: "Acasă",
+      nav_about: "Despre Noi",
+      nav_services: "Servicii",
+      nav_portfolio: "Portofoliu",
+      nav_contact: "Contacte",
+      nav_getstarted: "Contactați-ne",
+      lang_label: "Limba",
+      lang_ro: "Română",
+      lang_ru: "Русский",
+      lang_en: "English",
+      page_title: "Detalii Servicii",
+      service_title: "Design Interior",
+      service_description: "Creăm designuri unice și funcționale pentru casa ta, luând în considerare toate dorințele și tendințele moderne.",
+      service_lead: "Creăm spații care combină estetica, funcționalitatea și confortul, adaptate nevoilor și stilului tău de viață.",
+      meta_premium: "Serviciu Premium",
+      meta_since: "Din 2015",
+      meta_rating: "Evaluare 4.9/5",
+      tab_overview: "Prezentare Generală",
+      tab_process: "Proces",
+      tab_benefits: "Beneficii",
+      overview_title: "Abordare Personalizată în Design",
+      overview_p1: "Oferim soluții de design interior care reflectă personalitatea și nevoile tale, integrând cele mai recente tendințe în design.",
+      overview_p2: "Fiecare proiect este unic, iar noi colaborăm îndeaproape cu clienții pentru a crea spații care inspiră și oferă confort pe termen lung.",
+      process_step1_title: "Consultare Inițială",
+      process_step1_desc: "Discutăm dorințele și nevoile tale pentru a înțelege viziunea ta asupra spațiului.",
+      process_step2_title: "Concept și Proiectare",
+      process_step2_desc: "Creăm un concept de design personalizat, incluzând schițe și randări 3D.",
+      process_step3_title: "Implementare",
+      process_step3_desc: "Coordonăm toate aspectele proiectului, de la selecția materialelor la gestionarea lucrărilor.",
+      process_step4_title: "Finalizare și Livrare",
+      process_step4_desc: "Asigurăm finisajele finale și predăm un spațiu gata de utilizare, perfect aliniat cu viziunea ta.",
+      benefit1_title: "Spații Personalizate",
+      benefit1_desc: "Designuri unice care reflectă stilul și personalitatea ta.",
+      benefit2_title: "Estetică Modernă",
+      benefit2_desc: "Integrăm cele mai noi tendințe pentru un aspect contemporan.",
+      benefit3_title: "Funcționalitate",
+      benefit3_desc: "Optimizăm spațiile pentru confort și eficiență zilnică.",
+      benefit4_title: "Calitate Garantată",
+      benefit4_desc: "Materiale premium și execuție de înaltă calitate.",
+      portfolio_title: "Portofoliul Nostru de Design",
+      portfolio_item1_title: "Living Modern",
+      portfolio_item1_desc: "Design minimalist pentru un living spațios",
+      portfolio_item2_title: "Bucătărie Contemporană",
+      portfolio_item2_desc: "Funcționalitate și eleganță într-un spațiu compact",
+      portfolio_item3_title: "Dormitor Cozy",
+      portfolio_item3_desc: "Ambianță caldă pentru relaxare maximă",
+      action_title: "Gata să-ți Transformăm Casa?",
+      action_desc: "Obține o consultație gratuită cu experții noștri în design interior și descoperă cum îți putem transforma spațiul.",
+      action_btn: "Programează o Consultație",
+      action_guarantee: "Garanție 100% Satisfacție",
+      features_title: "Ce Oferim",
+      feature1_title: "Design Personalizat",
+      feature1_desc: "Soluții adaptate stilului tău de viață",
+      feature2_title: "Tendințe Moderne",
+      feature2_desc: "Integrăm cele mai noi stiluri de design",
+      feature3_title: "Optimizare Spațiu",
+      feature3_desc: "Maximizăm funcționalitatea fiecărui spațiu",
+      feature4_title: "Materiale de Calitate",
+      feature4_desc: "Utilizăm doar materiale premium",
+      feature5_title: "Suport Complet",
+      feature5_desc: "Asistență pe tot parcursul proiectului",
+      testimonial_text: "Echipa Renovare a transformat complet casa noastră. Designul este uimitor, iar atenția la detalii este incredibilă!",
+      testimonial_name: "Maria Popescu",
+      testimonial_role: "Proprietar, București",
+      contact_title: "Aveți Întrebări?",
+      contact_phone_label: "Sunați-ne",
+      contact_email_label: "Scrieți-ne",
+      footer_about: "Oferim soluții de design interior care combină estetica și funcționalitatea pentru a crea spații care inspiră și oferă confort.",
+      footer_links_title: "Link-uri Utile",
+      footer_services_title: "Serviciile Noastre",
+      footer_terms: "Termeni și Condiții",
+      footer_privacy: "Politica de Confidențialitate",
+      footer_copyright: "Copyright",
+      footer_rights: "Toate Drepturile Rezervate",
+      service1: "Design Interior",
+      service2: "Consultanță Design",
+      service3: "Management Proiect",
+      service4: "Renovări",
+      service5: "Mobilier Personalizat"
+    },
+    ru: {
+      title: "Реноваре",
+      nav_home: "Главная",
+      nav_about: "О нас",
+      nav_services: "Услуги",
+      nav_portfolio: "Портфолио",
+      nav_contact: "Контакты",
+      nav_getstarted: "Свяжитесь с нами",
+      lang_label: "Язык",
+      lang_ro: "Română",
+      lang_ru: "Русский",
+      lang_en: "English",
+      page_title: "Детали услуги",
+      service_title: "Дизайн интерьера",
+      service_description: "Мы создаем уникальные и функциональные дизайны для вашего дома, учитывая все ваши пожелания и современные тенденции.",
+      service_lead: "Мы создаем пространства, сочетающие эстетику, функциональность и комфорт, адаптированные к вашим потребностям и стилю жизни.",
+      meta_premium: "Премиум-услуга",
+      meta_since: "С 2015 года",
+      meta_rating: "Рейтинг 4.9/5",
+      tab_overview: "Обзор",
+      tab_process: "Процесс",
+      tab_benefits: "Преимущества",
+      overview_title: "Персонализированный подход к дизайну",
+      overview_p1: "Мы предлагаем решения для дизайна интерьера, которые отражают вашу индивидуальность и потребности, интегрируя последние тенденции в дизайне.",
+      overview_p2: "Каждый проект уникален, и мы тесно сотрудничаем с клиентами, чтобы создать пространства, которые вдохновляют и обеспечивают комфорт на долгие годы.",
+      process_step1_title: "Первичная консультация",
+      process_step1_desc: "Мы обсуждаем ваши пожелания и потребности, чтобы понять ваше видение пространства.",
+      process_step2_title: "Концепция и проектирование",
+      process_step2_desc: "Создаем индивидуальный концепт дизайна, включая эскизы и 3D-визуализации.",
+      process_step3_title: "Реализация",
+      process_step3_desc: "Координируем все аспекты проекта, от выбора материалов до управления работами.",
+      process_step4_title: "Завершение и сдача",
+      process_step4_desc: "Обеспечиваем финальные отделочные работы и сдаем пространство, полностью соответствующее вашему видению.",
+      benefit1_title: "Индивидуальные пространства",
+      benefit1_desc: "Уникальные дизайны, отражающие ваш стиль и личность.",
+      benefit2_title: "Современная эстетика",
+      benefit2_desc: "Интегрируем новейшие тенденции для современного вида.",
+      benefit3_title: "Функциональность",
+      benefit3_desc: "Оптимизируем пространства для комфорта и ежедневной эффективности.",
+      benefit4_title: "Гарантированное качество",
+      benefit4_desc: "Премиум-материалы и высококачественное исполнение.",
+      portfolio_title: "Наше портфолио дизайна",
+      portfolio_item1_title: "Современная гостиная",
+      portfolio_item1_desc: "Минималистичный дизайн для просторной гостиной",
+      portfolio_item2_title: "Современная кухня",
+      portfolio_item2_desc: "Функциональность и элегантность в компактном пространстве",
+      portfolio_item3_title: "Уютная спальня",
+      portfolio_item3_desc: "Теплая атмосфера для максимального расслабления",
+      action_title: "Готовы преобразить ваш дом?",
+      action_desc: "Получите бесплатную консультацию с нашими экспертами по дизайну интерьера и узнайте, как мы можем преобразить ваше пространство.",
+      action_btn: "Запишитесь на консультацию",
+      action_guarantee: "Гарантия 100% удовлетворенности",
+      features_title: "Что мы предлагаем",
+      feature1_title: "Индивидуальный дизайн",
+      feature1_desc: "Решения, адаптированные к вашему стилю жизни",
+      feature2_title: "Современные тенденции",
+      feature2_desc: "Интегрируем новейшие стили дизайна",
+      feature3_title: "Оптимизация пространства",
+      feature3_desc: "Максимизируем функциональность каждого пространства",
+      feature4_title: "Качественные материалы",
+      feature4_desc: "Используем только премиум-материалы",
+      feature5_title: "Полная поддержка",
+      feature5_desc: "Сопровождение на всех этапах проекта",
+      testimonial_text: "Команда Реноваре полностью преобразила наш дом. Дизайн потрясающий, а внимание к деталям невероятное!",
+      testimonial_name: "Мария Попеску",
+      testimonial_role: "Владелец, Бухарест",
+      contact_title: "Есть вопросы?",
+      contact_phone_label: "Позвоните нам",
+      contact_email_label: "Напишите нам",
+      footer_about: "Мы предлагаем решения для дизайна интерьера, которые сочетают эстетику и функциональность, чтобы создать пространства, которые вдохновляют и обеспечивают комфорт.",
+      footer_links_title: "Полезные ссылки",
+      footer_services_title: "Наши услуги",
+      footer_terms: "Условия и положения",
+      footer_privacy: "Политика конфиденциальности",
+      footer_copyright: "Авторское право",
+      footer_rights: "Все права защищены",
+      service1: "Дизайн интерьера",
+      service2: "Консультации по дизайну",
+      service3: "Управление проектами",
+      service4: "Ремонт",
+      service5: "Индивидуальная мебель"
+    },
+    en: {
+      title: "Renovare",
+      nav_home: "Home",
+      nav_about: "About Us",
+      nav_services: "Services",
+      nav_portfolio: "Portfolio",
+      nav_contact: "Contact",
+      nav_getstarted: "Contact Us",
+      lang_label: "Language",
+      lang_ro: "Română",
+      lang_ru: "Русский",
+      lang_en: "English",
+      page_title: "Service Details",
+      service_title: "Interior Design",
+      service_description: "We create unique and functional designs for your home, considering all your wishes and modern trends.",
+      service_lead: "We create spaces that combine aesthetics, functionality, and comfort, tailored to your needs and lifestyle.",
+      meta_premium: "Premium Service",
+      meta_since: "Since 2015",
+      meta_rating: "4.9/5 Rating",
+      tab_overview: "Overview",
+      tab_process: "Process",
+      tab_benefits: "Benefits",
+      overview_title: "Personalized Design Approach",
+      overview_p1: "We offer interior design solutions that reflect your personality and needs, incorporating the latest design trends.",
+      overview_p2: "Each project is unique, and we work closely with clients to create spaces that inspire and provide long-term comfort.",
+      process_step1_title: "Initial Consultation",
+      process_step1_desc: "We discuss your wishes and needs to understand your vision for the space.",
+      process_step2_title: "Concept and Design",
+      process_step2_desc: "We create a customized design concept, including sketches and 3D renderings.",
+      process_step3_title: "Implementation",
+      process_step3_desc: "We coordinate all project aspects, from material selection to work management.",
+      process_step4_title: "Completion and Delivery",
+      process_step4_desc: "We ensure final touches and deliver a ready-to-use space, perfectly aligned with your vision.",
+      benefit1_title: "Customized Spaces",
+      benefit1_desc: "Unique designs that reflect your style and personality.",
+      benefit2_title: "Modern Aesthetics",
+      benefit2_desc: "We integrate the latest trends for a contemporary look.",
+      benefit3_title: "Functionality",
+      benefit3_desc: "We optimize spaces for comfort and daily efficiency.",
+      benefit4_title: "Guaranteed Quality",
+      benefit4_desc: "Premium materials and high-quality execution.",
+      portfolio_title: "Our Design Portfolio",
+      portfolio_item1_title: "Modern Living Room",
+      portfolio_item1_desc: "Minimalist design for a spacious living room",
+      portfolio_item2_title: "Contemporary Kitchen",
+      portfolio_item2_desc: "Functionality and elegance in a compact space",
+      portfolio_item3_title: "Cozy Bedroom",
+      portfolio_item3_desc: "Warm ambiance for maximum relaxation",
+      action_title: "Ready to Transform Your Home?",
+      action_desc: "Get a free consultation with our interior design experts and discover how we can transform your space.",
+      action_btn: "Schedule a Consultation",
+      action_guarantee: "100% Satisfaction Guarantee",
+      features_title: "What We Offer",
+      feature1_title: "Custom Design",
+      feature1_desc: "Solutions tailored to your lifestyle",
+      feature2_title: "Modern Trends",
+      feature2_desc: "We integrate the latest design styles",
+      feature3_title: "Space Optimization",
+      feature3_desc: "We maximize the functionality of every space",
+      feature4_title: "Quality Materials",
+      feature4_desc: "We use only premium materials",
+      feature5_title: "Full Support",
+      feature5_desc: "Assistance throughout the project",
+      testimonial_text: "The Renovare team completely transformed our home. The design is stunning, and the attention to detail is incredible!",
+      testimonial_name: "Maria Popescu",
+      testimonial_role: "Homeowner, Bucharest",
+      contact_title: "Have Questions?",
+      contact_phone_label: "Call Us",
+      contact_email_label: "Email Us",
+      footer_about: "We offer interior design solutions that combine aesthetics and functionality to create spaces that inspire and provide comfort.",
+      footer_links_title: "Useful Links",
+      footer_services_title: "Our Services",
+      footer_terms: "Terms and Conditions",
+      footer_privacy: "Privacy Policy",
+      footer_copyright: "Copyright",
+      footer_rights: "All Rights Reserved",
+      service1: "Interior Design",
+      service2: "Design Consultation",
+      service3: "Project Management",
+      service4: "Renovations",
+      service5: "Custom Furniture"
+    }
+  };
+
+  function changeLanguage(lang) {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+      const key = element.getAttribute('data-translate');
+      element.textContent = translations[lang][key] || element.textContent;
+    });
+    document.documentElement.lang = lang;
+  }
+
+  // Set default language to Romanian
+  document.addEventListener('DOMContentLoaded', () => {
+    changeLanguage('ro');
+  });
+</script>
+
+</body>
+
+</html>
