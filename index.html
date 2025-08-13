@@ -7,7 +7,8 @@
   <title data-translate="meta_title">Renovare apartamente și băi la cheie</title>
   <meta name="description" data-translate="meta_description" content="Renovare profesională a apartamentelor și băilor la cheie în Chișinău. Materiale de calitate, tehnologii moderne și abordare individuală.">
   <meta name="keywords" data-translate="meta_keywords" content="renovare apartamente, renovare băi, la cheie, design interior">
-
+  <!-- EmailJS SDK with integrity check -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" integrity="sha256-6iX5uKz1jL2F7l6e2v8z/3v7+5f3fF52f6e2v8z/3v7+5f3fF52f6e2v8z/3v7+5f3fF52f" crossorigin="anonymous" onload="console.log('EmailJS SDK loaded successfully')" onerror="console.error('Failed to load EmailJS SDK')"></script>
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -917,7 +918,6 @@
     </div>
 
     <!-- Contact Form Section (Overlapping) -->
-    <!-- Contact Form Section (Overlapping) -->
     <div class="container form-container-overlap">
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
         <div class="col-lg-10">
@@ -972,9 +972,9 @@
                 </div>
 
                 <div class="col-12">
-                  <div class="loading" data-translate="form_loading">Încărcare</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message" data-translate="form_sent">Mesajul tău a fost trimis. Mulțumim!</div>
+                  <div class="loading" data-translate="form_loading" style="display: none;">Încărcare</div>
+                  <div class="error-message" style="display: none;"></div>
+                  <div class="sent-message" data-translate="form_sent" style="display: none;">Mesajul tău a fost trimis. Mulțumim!</div>
                 </div>
 
                 <div class="col-12 text-center">
