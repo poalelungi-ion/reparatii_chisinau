@@ -917,19 +917,20 @@
     </div>
 
     <!-- Contact Form Section (Overlapping) -->
+    <!-- Contact Form Section (Overlapping) -->
     <div class="container form-container-overlap">
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
         <div class="col-lg-10">
           <div class="contact-form-wrapper">
             <h2 class="text-center mb-4" data-translate="contact_form_title">Contactați-ne</h2>
 
-            <form action="forms/contact.php" method="post" class="php-email-form">
+            <form id="contact-form" action="#" class="php-email-form">
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-group">
                     <div class="input-with-icon">
                       <i class="bi bi-person"></i>
-                      <input type="text" class="form-control" name="name" placeholder="Nume" required="">
+                      <input type="text" class="form-control" name="name" placeholder="Nume" required>
                     </div>
                   </div>
                 </div>
@@ -938,7 +939,16 @@
                   <div class="form-group">
                     <div class="input-with-icon">
                       <i class="bi bi-envelope"></i>
-                      <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                      <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="input-with-icon">
+                      <i class="bi bi-telephone"></i>
+                      <input type="tel" class="form-control" name="phone" placeholder="Număr de telefon" required>
                     </div>
                   </div>
                 </div>
@@ -947,7 +957,7 @@
                   <div class="form-group">
                     <div class="input-with-icon">
                       <i class="bi bi-text-left"></i>
-                      <input type="text" class="form-control" name="subject" placeholder="Subiect" required="">
+                      <input type="text" class="form-control" name="subject" placeholder="Subiect" required>
                     </div>
                   </div>
                 </div>
@@ -956,7 +966,7 @@
                   <div class="form-group">
                     <div class="input-with-icon">
                       <i class="bi bi-chat-dots message-icon"></i>
-                      <textarea class="form-control" name="message" placeholder="Mesaj..." style="height: 180px" required=""></textarea>
+                      <textarea class="form-control" name="message" placeholder="Mesaj..." style="height: 180px" required></textarea>
                     </div>
                   </div>
                 </div>
@@ -975,9 +985,45 @@
           </div>
         </div>
       </div>
-
     </div>
 
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent default form submission
+
+          // Show loading message
+          const loading = document.querySelector('.loading');
+          const sentMessage = document.querySelector('.sent-message');
+          const errorMessage = document.querySelector('.error-message');
+          loading.style.display = 'block';
+          sentMessage.style.display = 'none';
+          errorMessage.style.display = 'none';
+
+          // Generate timestamp for {{time}} variable in EEST (UTC+3)
+          const now = new Date();
+          const offset = 3 * 60; // EEST is UTC+3
+          const eestTime = new Date(now.getTime() + offset * 60 * 1000);
+          const timestamp = eestTime.toISOString().replace('T', ' ').split('.')[0]; // Format: YYYY-MM-DD HH:MM:SS
+
+          // Append timestamp to form data
+          const formData = new FormData(this);
+          formData.append('time', timestamp);
+
+          // Send form data using EmailJS
+          emailjs.sendForm('service_gbz7vn8', 'template_ccbm4bb', this)
+                  .then(() => {
+                    loading.style.display = 'none';
+                    sentMessage.style.display = 'block';
+                    this.reset(); // Reset form after successful submission
+                  }, (error) => {
+                    loading.style.display = 'none';
+                    errorMessage.style.display = 'block';
+                    errorMessage.textContent = 'Eroare la trimiterea mesajului: ' + error.text;
+                  });
+        });
+      }
+    </script>
   </section><!-- /Contact Section -->
 
 </main>
@@ -1015,7 +1061,7 @@
         <p></p>
         <p>Chișinău, Moldova, MD</p>
         <p class="mt-4"><strong data-translate="footer_phone_label">Telefon:</strong> <a href="tel:+37369091161">+373 690 91 161</a></p>
-        <p><strong data-translate="footer_email_label">Email:</strong> <span>info@renovare.md</span></p>
+        <p><strong data-translate="footer_email_label">Email:</strong> <span><a href="mailto:renovation.chisinau@gmail.com">renovation.chisinau@gmail.com</a></span></p>
       </div>
 
     </div>
